@@ -1,13 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaraunt Home</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Kaushan+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <!-- we start header -->
+    <header class="header">
+        <div class="container header-container">
+            <h2 class="header_title">Gerícht</h2>
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li class="header_item"><a class="header_link" href="./index.html">Home</a></li>
+                    <li class="header_item"><a class="header_link" href="./bar.html">Pages</a></li>
+                    <li class="header_item"><a class="header_link" href=".footer">Contact Us</a></li>
+                    <li class="header_item"><a class="header_link" href=".blog">Blog</a></li>
+                    <li class="header_item"><a class="header_link" href="./index.html">Landing</a></li>
+                </ul>
+
+                <ul class="header_inform-list">
+                    <li class="header_inform-item">Log in / registration</li>
+                    <li class="header_inform-item">book table</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header kinda done -->
+
+    <main>
+
+        <section class="the-key hero">
+            <div class="container the-key_container">
+                <div class="the-key_wrappeer">
+                    <p class="the-key_subtitle">Chase the new Flavour</p>
+                    <h1 class="the-key_title">The key to Fine dining</h1>
+                    <p class="the-key_text">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
+                        morbi facilisis quam
+                        scelerisque sapien. Et, penatibus aliquam amet tellus </p>
+                    <button>Explore Menu</button>
+                </div>
+                <img class="the-key_img" src="./images/main/hero.png" alt="eggs">
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container about_container">
+                <div class="about_about-us">
+                    <h2 class="about-us_title">About Us</h2>
+                    <p class="about-us_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
+                        adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+                    <button class="about-us_button">Know More</button>
+                </div>
+                <img class="about_image" src="./images/main/knife.png" alt="knife">
+                <div class="about_history">
+                    <h2 class="history_title">Our History</h2>
+                    <p class="history_text">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus
+                        placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+                    <button class="history_button">Know More</button>
+                </div>
+        </section>
+
+        <section class="reservation">
+            <div class="container reservation_container">
+                <p class="reservation_subtitle">Reservations</p>
+                <h2 class="reservation_title">Book A Table</h2>
+                <ul class="reservation_list">
+                    <li class="reservation_item">
+                        <select name="persons" id="reservation_select">
+                            <option value="1">1 Person</option>
+                            <option value="2">2 Persons</option>
+                            <option value="3">3 Persons</option>
+                            <option value="4">4 Persons</option>
+                            <option value="5">5 Persons</option>
+                            <option value="6">6 Persons</option>
+                        </select>
+                    </li>
+                    <li class="reservation_item">
+                        <select name="date" id="reservation_select">
+                            <option value="1">12/05/2025</option>
+                            <option value="2">12/06/2025</option>
+                            <option value="3">12/07/2025</option>
+                            <option value="4">12/08/2025</option>
+                            <option value="5">12/09/2025</option>
+                            <option value="6">12/10/2025</option>
+                            <option value="7">12/11/2025</option>
+                        </select>
+                    </li>
+                    <li class="reservation_item">
+                        <select name="time" id="reservation_select">
+                            <option value="1">11:00 AM</option>
+                            <option value="2">12:00 AM</option>
+                            <option value="3">1:00 PM</option>
+                            <option value="4">2:00 PM</option>
+                            <option value="5">3:00 PM</option>
+                            <option value="6">4:00 PM</option>
+                            <option value="7">5:00 PM</option>
+                        </select>
+                    </li>
+                </ul>
+                <button class="reservation_button">Book Now</button>
+            </div>
+        </section>
+
+        <section class="menu">
+            <div class="container menu_container">
+            <ul class="menu_list">
+                <!-- add underline hover -->
+                <li class="menu_item"><a class="menu_link" href="./bar.html">Bar Menu</a></li>
+                <li class="menu_item"><a class="menu_link" href="">Food Menu</a></li>
+                <li class="menu_item"><a class="menu_link" href="">Desserts Menu</a></li>
+            </ul>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
