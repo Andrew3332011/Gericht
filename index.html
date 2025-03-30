@@ -17,25 +17,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Kaushan+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bestermind" rel="stylesheet">
+
 </head>
 
 <body>
     <!-- we start header -->
     <header class="header">
         <div class="container header-container">
-            <h2 class="header_title">Gerícht</h2>
-            <nav class="header_nav">
-                <ul class="header_list">
-                    <li class="header_item"><a class="header_link" href="./index.html">Home</a></li>
-                    <li class="header_item"><a class="header_link" href="./bar.html">Pages</a></li>
-                    <li class="header_item"><a class="header_link" href=".footer">Contact Us</a></li>
-                    <li class="header_item"><a class="header_link" href=".blog">Blog</a></li>
-                    <li class="header_item"><a class="header_link" href="./index.html">Landing</a></li>
+            <a class="header-logo">Gerícht</a>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a class="header-link" href="./index.html">Home</a></li>
+                    <li class="header-item"><a class="header-link" href="./bar.html">Pages</a></li>
+                    <li class="header-item"><a class="header-link" href="#footer">Contact Us</a></li>
+                    <li class="header-item"><a class="header-link" href="#blog">Blog</a></li>
+                    <li class="header-item"><a class="header-link" href="./index.html">Landing</a></li>
                 </ul>
 
-                <ul class="header_inform-list">
-                    <li class="header_inform-item">Log in / registration</li>
-                    <li class="header_inform-item">book table</li>
+                <ul class="header-inform-list">
+                    <li class="header-inform-item">Log in / registration</li>
+                    <li class="header-inform-item">book table</li>
                 </ul>
             </nav>
         </div>
@@ -43,88 +45,206 @@
     <!-- header kinda done -->
 
     <main>
-
-        <section class="the-key hero">
-            <div class="container the-key_container">
-                <div class="the-key_wrappeer">
-                    <p class="the-key_subtitle">Chase the new Flavour</p>
-                    <h1 class="the-key_title">The key to Fine dining</h1>
-                    <p class="the-key_text">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
+        <!-- first section -->
+        <section class="the_key">
+            <div class="container the_key-container">
+                <div class="the_key-wrappeer">
+                    <p class="the_key-subtitle">Chase the new Flavour</p>
+                    <h1 class="the_key-title">The key to Fine dining</h1>
+                    <p class="the_key-text">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
                         morbi facilisis quam
                         scelerisque sapien. Et, penatibus aliquam amet tellus </p>
-                    <button>Explore Menu</button>
+                    <button class="the_key-button">Explore Menu</button>
                 </div>
-                <img class="the-key_img" src="./images/main/hero.png" alt="eggs">
+                <img class="the_key-img" src="./images/main/hero.png" alt="eggs">
+                <ul class="the_key-list">
+                    <li class="the_key-item">01</li>
+                    <li class="the_key-item">-</li>
+                    <li class="the_key-item">02</li>
+                    <li class="the_key-item">03</li>
+                    <li class="the_key-item">04</li>
+                </ul>
             </div>
         </section>
 
         <section class="about">
-            <div class="container about_container">
-                <div class="about_about-us">
-                    <h2 class="about-us_title">About Us</h2>
-                    <p class="about-us_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
+            <div class="container about-container">
+                <div class="about-wrapper">
+                    <h2 class="about-title">About Us</h2>
+                    <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra
                         adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-                    <button class="about-us_button">Know More</button>
+                    <button class="about-button">Know More</button>
                 </div>
-                <img class="about_image" src="./images/main/knife.png" alt="knife">
-                <div class="about_history">
-                    <h2 class="history_title">Our History</h2>
-                    <p class="history_text">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus
+                <img class="about-image" src="./images/main/knife.png" alt="knife">
+                <div class="about-wrapper">
+                    <h2 class="about-title">Our History</h2>
+                    <p class="about-text">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus
                         placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
-                    <button class="history_button">Know More</button>
+                    <button class="about-button">Know More</button>
                 </div>
         </section>
 
         <section class="reservation">
-            <div class="container reservation_container">
-                <p class="reservation_subtitle">Reservations</p>
-                <h2 class="reservation_title">Book A Table</h2>
-                <ul class="reservation_list">
-                    <li class="reservation_item">
-                        <select name="persons" id="reservation_select">
-                            <option value="1">1 Person</option>
-                            <option value="2">2 Persons</option>
-                            <option value="3">3 Persons</option>
-                            <option value="4">4 Persons</option>
-                            <option value="5">5 Persons</option>
-                            <option value="6">6 Persons</option>
+            <div class="container reservation-container">
+                <p class="reservation-subtitle">Reservations</p>
+                <h2 class="reservation-title">Book A Table</h2>
+                <ul class="reservation-list">
+                    <li class="reservation-item">
+                        <select name="persons" id="reservation-select">
+                            <option class="reservation-option" value="1">1 Person</option>
+                            <option class="reservation-option" value="2">2 Persons</option>
+                            <option class="reservation-option" value="3">3 Persons</option>
+                            <option class="reservation-option" value="4">4 Persons</option>
+                            <option class="reservation-option" value="5">5 Persons</option>
+                            <option class="reservation-option" value="6">6 Persons</option>
                         </select>
                     </li>
-                    <li class="reservation_item">
-                        <select name="date" id="reservation_select">
-                            <option value="1">12/05/2025</option>
-                            <option value="2">12/06/2025</option>
-                            <option value="3">12/07/2025</option>
-                            <option value="4">12/08/2025</option>
-                            <option value="5">12/09/2025</option>
-                            <option value="6">12/10/2025</option>
-                            <option value="7">12/11/2025</option>
+                    <li class="reservation-item">
+                        <select name="date" id="reservation-select">
+                            <option class="reservation-option" value="1">12/05/2025</option>
+                            <option class="reservation-option" value="2">12/06/2025</option>
+                            <option class="reservation-option" value="3">12/07/2025</option>
+                            <option class="reservation-option" value="4">12/08/2025</option>
+                            <option class="reservation-option" value="5">12/09/2025</option>
+                            <option class="reservation-option" value="6">12/10/2025</option>
+                            <option class="reservation-option" value="7">12/11/2025</option>
                         </select>
                     </li>
-                    <li class="reservation_item">
-                        <select name="time" id="reservation_select">
-                            <option value="1">11:00 AM</option>
-                            <option value="2">12:00 AM</option>
-                            <option value="3">1:00 PM</option>
-                            <option value="4">2:00 PM</option>
-                            <option value="5">3:00 PM</option>
-                            <option value="6">4:00 PM</option>
-                            <option value="7">5:00 PM</option>
+                    <li class="reservation-item">
+                        <select name="time" id="reservation-select">
+                            <option class="reservation-option" value="1">11:00 AM</option>
+                            <option class="reservation-option" value="2">12:00 AM</option>
+                            <option class="reservation-option" value="3">1:00 PM</option>
+                            <option class="reservation-option" value="4">2:00 PM</option>
+                            <option class="reservation-option" value="5">3:00 PM</option>
+                            <option class="reservation-option" value="6">4:00 PM</option>
+                            <option class="reservation-option" value="7">5:00 PM</option>
                         </select>
                     </li>
                 </ul>
-                <button class="reservation_button">Book Now</button>
+                <button class="reservation-button">Book Now</button>
             </div>
         </section>
 
         <section class="menu">
-            <div class="container menu_container">
-            <ul class="menu_list">
-                <!-- add underline hover -->
-                <li class="menu_item"><a class="menu_link" href="./bar.html">Bar Menu</a></li>
-                <li class="menu_item"><a class="menu_link" href="">Food Menu</a></li>
-                <li class="menu_item"><a class="menu_link" href="">Desserts Menu</a></li>
-            </ul>
+            <div class="container menu-container">
+                <ul class="menu-list">
+                    <!-- add underline hover -->
+                    <li class="menu-item"><a class="menu-link" href="./bar.html">Bar Menu</a></li>
+                    <li class="menu-item"><a class="menu-link" href="">Food Menu</a></li>
+                    <li class="menu-item"><a class="menu-link" href="">Desserts Menu</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="special">
+            <div class="container special-container">
+                <p class="special-subtitle">Menu that fits you palatte</p>
+                <h2 class="special-title">Today’s Special</h2>
+                <div class="special-wrapper">
+                    <div class="special-wrapper-list">
+                        <h3 class="special-wrapper-title">Wine & Beer</h3>
+                        <ul class="special-list">
+                            <li class="special-item">
+                                <h4 class="special-caption">Chapel Hill Shiraz</h4>
+                                <p class="special-text">AU | Bottle</p>
+                                <p class="special-price">$56</p>
+                            </li>
+                            <li class="special-item">
+                                <h4 class="special-caption">Catena Malbec</h4>
+                                <p class="special-text">AR | Bottle</p>
+                                <p class="special-price">$59</p>
+                            </li>
+                            <li class="special-item">
+                                <h4 class="special-caption">La Vieille Rosé</h4>
+                                <p class="special-text">FR | 750 ml</p>
+                                <p class="special-price">$44</p>
+                            </li>
+                            <li class="special-item">
+                                <h4 class="special-caption">Rhino Pale Ale</h4>
+                                <p class="special-text">CA | 750 ml</p>
+                                <p class="special-price">$31</p>
+                            </li>
+                            <li class="special-item">
+                                <h4 class="special-caption">Irish Guinness</h4>
+                                <p class="special-text">IE | 750 ml</p>
+                                <p class="special-price">$26</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <img src="./images/main/special-shaker.png" alt="shaker">
+                    <div class="special-wrapper-list">
+                        <h3 class="special-wrapper-title">Cocktails</h3>
+                        <ul class="special-list">
+                            <li class="special-item">
+                                <h4 class="special-caption">Aperol Spritz</h4>
+                                <p class="special-text">Aperol | Villa Marchesi prosecco | soda | 30ml</p>
+                                <p class="special-price">$20</p>
+                            </li>
+                            <li class="special-item">
+                                <h4 class="special-caption">Dark 'N' Stormy
+                                </h4>
+                                <p class="special-text">Dark rum | Ginger beer | Slice of lime. </p>
+                                <p class="special-price">$16</p>
+                            </li>
+                            <li class="special-item">
+                                <h4 class="special-caption">Daiquiri
+                                </h4>
+                                <p class="special-text">Rum | Citrus juice | Sugar</p>
+                                <p class="special-price">$10</p>
+                            </li>
+                            <li class="special-item">
+                                <h4 class="special-caption">Old Fashioned
+                                </h4>
+                                <p class="special-text">Bourbon | Brown sugar | Angostura Bitters</p>
+                                <p class="special-price">$31</p>
+                            </li>
+                            <li class="special-item">
+                                <h4 class="special-caption">Negroni</h4>
+                                <p class="special-text">Gin | Sweet Vermouth | Campari | Orange garnish</p>
+                                <p class="special-price">$26</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="special-button">View More</button>
+            </div>
+        </section>
+
+        <section class="chef">
+            <div class="container chef-container">
+                <img src="./images/main/chef.png" alt="chef" class="chef-img">
+                <div class="chef-wrapper">
+                    <p class="chef-subtitle">Chef’s Word</p>
+                    <h2 class="chef-title">What we believe in</h2>
+                    <p class="chef-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .
+                        auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque
+                        scelerisque congue ac consequat, aliquam molestie lectus eu. Congue iaculis integer curabitur
+                        semper sit nunc.</p>
+                    <h3 class="chef-name">Kevin Luo</h3>
+                    <p class="chef-desc">Chef & Founder</p>
+                    <h4 class="chef-signature">Kevin Luo</h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="customers">
+            <div class="container customers-container">
+                <ul class="customers-list">
+                    <li class="customers-item">
+                        <p class="customers-text"></p>
+                    </li>
+                    <li class="customers-item">
+                        <p class="customers-text"></p>
+                    </li>
+                    <li class="customers-item">
+                        <p class="customers-text"></p>
+                    </li>
+                    <li class="customers-item">
+                        <p class="customers-text"></p>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

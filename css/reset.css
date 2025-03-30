@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 130%;
 }
 ol, ul {
 	list-style: none;
@@ -46,4 +46,8 @@ table {
 ::before,
 ::after {
   box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
 }
