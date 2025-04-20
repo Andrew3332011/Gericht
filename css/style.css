@@ -14,7 +14,7 @@ body {
     background-color: var(--bg-color);
     font-family: var(--main-text);
     font-size: 16px;
-    background-image: url(/images/main/wave\ element.png);
+    background-image: url(/images/main/wave-element.png);
     color: var(--accent-text-color);
 }
 
@@ -26,7 +26,8 @@ body {
 button {
     background-color: var(--main-color);
     color: var(--button-color);
-
+    border: none;
+    font-size: 16px;
 }
 
 .header {
@@ -92,6 +93,15 @@ button {
     color: var(--accent-text-color);
 }
 
+.the_key-subtitle::after {
+    content: '';
+    background-image: url(/images/main/spoon.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    padding-top: 8px;
+}
+
 .the_key-wrapper {
     width: 453px;
     padding-top: 175px;
@@ -107,6 +117,7 @@ button {
 
 .the_key {
     padding-top: 48px;
+    padding-bottom: 147px;
 }
 
 .the_key-title {
@@ -146,6 +157,9 @@ button {
 
 .about {
     background: url(/images/main/about_us-bg.png);
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 136px;
 }
 
 .about-title {
@@ -154,7 +168,7 @@ button {
     line-height: 130%;
     text-transform: capitalize;
     color: var(--main-color);
-    padding-top: 339px;
+
 }
 
 .about-text {
@@ -179,8 +193,8 @@ button {
     background-image: url(/images/main/g-about_us-bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    gap: 74px;
     justify-content: center;
+    align-items: center;
 }
 
 .about-left {
@@ -188,14 +202,13 @@ button {
 }
 
 .about-image {
-    padding-top: 120px;
-    padding-bottom: 136px;
+    padding-left: 74px;
+    padding-right: 96px;
 }
 
 .reservation-list {
     display: flex;
-    gap: 32px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .reservation {
@@ -217,8 +230,10 @@ button {
     border: 1px solid rgba(220, 202, 135, 0.2);
     background-color: var(--bg-color);
     text-align: center;
-    padding: 48px;
+    margin: auto;
+    display: block;
     width: 1364px;
+    padding: 48px 32px;
 }
 
 .reservation-subtitle {
@@ -238,17 +253,17 @@ button {
     padding-bottom: 64px;
 }
 
-#reservation-select {
+.reservation-select {
     background-color: var(--bg-color);
     border: 1px solid --main-color;
     padding: 16px 16px;
     line-height: 175%;
     font-weight: 600;
     text-transform: capitalize;
-    text-align: center;
     color: var(--text-color);
-    padding-right: 298px;
+    width: 412px;
     font-family: var(--main-text);
+    font-size: 16px;
 }
 
 .reservation-button {
@@ -265,7 +280,8 @@ button {
     background-repeat: no-repeat, repeat-x;
     background-position: center, top left;
     background-size: cover, 146px;
-
+    padding-top: 261px;
+    padding-bottom: 262px;
 }
 
 .menu-link {
@@ -284,8 +300,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 64px;
-    padding-top: 261px;
-    padding-bottom: 262px;
 }
 
 .special-wrapper {
@@ -294,6 +308,7 @@ button {
     padding-top: 64px;
     gap: 32px;
     padding-bottom: 64px;
+    align-items: center;
 }
 
 .special-subtitle {
@@ -302,13 +317,17 @@ button {
     line-height: 130%;
     text-transform: capitalize;
     text-align: center;
-    padding-top: 152px;
 }
 
 .special-spoon {
     margin: auto;
     display: block;
     padding-top: 8px;
+}
+
+.special {
+    padding-top: 152px;
+    padding-bottom: 152px;
 }
 
 .special-title {
@@ -321,12 +340,21 @@ button {
     padding-top: 8px;
 }
 
+.special-item {
+    padding-bottom: 40px;
+}
+
+.special-item.the_key-item:nth-child(5) {
+    padding-bottom: none;
+}
+
 .special-wrapper-title {
     font-weight: 600;
     font-size: 45px;
     line-height: 130%;
     text-transform: capitalize;
     text-align: center;
+    padding-bottom: 48px;
 }
 
 .special-caption {
@@ -344,31 +372,30 @@ button {
     padding-top: 8px;
 }
 
-/* .special-caption::before {
+.special-price::before {
     content: '';
-    display: block;
+    display: inline-block;
     width: 119px;
     height: 1px;
-    color: white;
-} */
-
-.special-hr {
-    width: 119px;
-    height: 1px;
-    color: var(--accent-color);
+    background-color: var(--accent-text-color);
+    margin-right: 32px;
+    margin-bottom: 5px;
+    margin-left: 32px;
 }
+
 
 .special-item-wrapper {
     display: flex;
     align-items: center;
-    gap: 32px;
+
     padding-top: 48px;
+    justify-content: space-between;
 }
 
 .special-price {
     font-weight: 700;
     font-size: 23px;
-    line-height: 130%;    
+    line-height: 130%;
 }
 
 .special-button {
@@ -384,7 +411,10 @@ button {
 
 .chef {
     background-image: url(/images/main/about_us-bg.png);
-    margin-top: 152px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 128px;
+    padding-bottom: 128px;
 }
 
 .chef-subtitle {
@@ -406,9 +436,9 @@ button {
 
 .chef-container {
     display: flex;
-    padding-top: 128px;
-    padding-bottom: 128px;
-    gap: 98px;
+    align-items: center;
+    gap: 96px;
+    justify-content: center;
 }
 
 .chef-text {
@@ -450,10 +480,17 @@ button {
     display: block;
     width: 47px;
     height: 40px;
+    display: inline-block;
+    margin-right: 10px;
 }
 
 .chef-wrapper {
     padding-top: 87px;
+}
+
+.customers {
+    padding-top: 152px;
+    padding-bottom: 152px;
 }
 
 .customers-subtitle {
@@ -462,7 +499,6 @@ button {
     line-height: 130%;
     text-transform: capitalize;
     text-align: center;
-    padding-top: 152px;
 }
 
 .customers-title {
@@ -518,3 +554,330 @@ button {
     width: 634px;
 }
 
+.video {
+    background-image: url(/images/main/video.png);
+    background-size: cover;
+    height: 763px;
+}
+
+.awards-wrapper {
+    display: flex;
+    gap: 111px;
+    justify-content: center;
+}
+
+
+.awards-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+}
+
+.awards-item {
+    display: flex;
+    gap: 32px;
+}
+
+.awards-number {
+    width: 79px;
+    height: 79px;
+}
+
+.awards-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+
+.awards {
+    background-image: url(/images/main/about_us-bg.png);
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.awards-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    text-transform: capitalize;
+    color: var(--main-color);
+    padding-top: 8px;
+}
+
+
+.awards-name {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.awards-text {
+    line-height: 175%;
+    color: var(--text-color);
+    font-family: var(--accent-text);
+}
+
+.awards-subtitle::after {
+    content: '';
+    background-image: url(/images/main/spoon.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    padding-top: 8px;
+}
+
+.blogs {
+    padding-top: 152px;
+    padding-bottom: 152px;
+}
+
+.blogs-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    padding-bottom: 64px;
+}
+
+.blogs-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.blogs-subtitle::after {
+    content: '';
+    background-image: url(/images/main/spoon.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    padding-top: 8px;
+    margin: auto;
+}
+
+.blogs-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    text-transform: capitalize;
+    color: var(--main-color);
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 64px;
+}
+
+.blogs-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogs-item {
+    width: 412px;
+}
+
+.blogs-inform {
+    line-height: 175%;
+    color: var(--accent-color);
+    font-family: var(--accent-text);
+    padding-top: 24px;
+}
+
+.blogs-label {
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    text-decoration-skip-ink: none;
+    color: var(--main-color);
+    padding-top: 32px;
+}
+
+.blogs-label:hover {
+    text-decoration: underline;
+}
+
+.blogs-text {
+    line-height: 175%;
+    color: var(--text-color);
+    font-family: var(--accent-text);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.blogs-button {
+    padding: 8px 32px;
+    font-weight: 700;
+    color: var(--button-color);
+    line-height: 175%;
+    font-family: var(--main-text);
+    margin: auto;
+    display: block;
+}
+
+.blogs-link {
+    font-weight: 700;
+    color: var(--main-color);
+    line-height: 175%;
+}
+
+.gallery {
+    padding-top: 280px;
+    padding-bottom: 241px;
+    background-image: url(/images/main/about_us-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.gallery-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    text-transform: capitalize;
+
+}
+
+.gallery-subtitle::after {
+    content: '';
+    background-image: url(/images/main/spoon.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    padding-top: 8px;
+}
+
+.gallery-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    color: var(--main-color);
+    text-transform: capitalize;
+    padding-top: 8px;
+}
+
+.gallery-text {
+    line-height: 175%;
+    color: var(--text-color);
+    font-family: var(--accent-text);
+    padding-top: 24px;
+    width: 491px;
+    padding-bottom: 24px;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+.gallery-list {
+    display: flex;
+    gap: 32px;
+}
+
+/* .gallery-img:hover::after {
+    /* /* background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.64) );
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: top; 
+}
+
+/* .gallery-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.64));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+    display: block;
+}  */
+
+.gallery-button {
+    padding: 8px 32px;
+    font-weight: 700;
+    color: var(--button-color);
+    line-height: 175%;
+    font-family: var(--main-text);
+}
+
+.newsletter {
+    padding-top: 113px;
+    padding-bottom: 128px;
+}
+
+.newsletter-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    text-transform: capitalize;
+}
+
+.newsletter-subtitle::after {
+    content: '';
+    background-image: url(/images/main/spoon.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    padding-top: 8px;
+    margin: auto;
+}
+
+.newsletter-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 130%;
+    color: var(--main-color);
+    text-transform: capitalize;
+    padding-top: 8px;
+}
+
+.newsletter-text {
+    line-height: 175%;
+    font-family: var(--accent-text);
+    padding-top: 24px;
+}
+
+.newsletter-input {
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 175%;
+    text-transform: capitalize;
+    font-family: var(--main-text);
+    background-color: var(--button-color);
+    padding: 16px 19px;
+    width: 635px;
+    border: 1px solid --accent-color;
+}
+
+.newsletter-button {
+    padding: 8px 32px;
+    font-weight: 700;
+    line-height: 175%;
+    font-size: 16px;
+    font-family: var(--main-text);
+    margin-left: 32px;
+}
+
+.newsletter-form {
+    padding-top: 64px;
+}
+
+.newsletter-container {
+    border: 1px solid rgba(220, 202, 135, 0.2);
+    background-color: var(--bg-color);
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 1364px;
+    padding: 48px 32px;
+}

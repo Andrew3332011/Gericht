@@ -25,7 +25,7 @@
     <!-- we start header -->
     <header class="header">
         <div class="container header-container">
-            <a class="header-logo">Gerícht</a>
+            <a class="header-logo" href="">Gerícht</a>
             <nav class="header-nav">
                 <ul class="header-list">
                     <li class="header-item"><a class="header-link" href="./index.html">Home</a></li>
@@ -52,7 +52,7 @@
                 <div class="the_key-slide">
                     <div class="the_key-wrapper">
                         <p class="the_key-subtitle">Chase the new Flavour</p>
-                        <img class="the_key-spoon" src="./images/main/spoon.png" alt="spoon">
+
                         <h1 class="the_key-title">The key to Fine dining</h1>
                         <p class="the_key-text">Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
                             morbi facilisis quam
@@ -96,14 +96,14 @@
         </section>
 
         <section class="reservation">
-            <div class="container reservation-container">
-                <div class="reservation-wrapper">
+            <div class="container">
+                <div class="reservation-container">
                     <p class="reservation-subtitle">Reservations</p>
                     <img class="reservation-spoon" src="./images/main/spoon.png" alt="spoon">
                     <h2 class="reservation-title">Book A Table</h2>
                     <ul class="reservation-list">
                         <li class="reservation-item">
-                            <select name="persons" id="reservation-select">
+                            <select name="persons" class="reservation-select" id="reservation-select">
                                 <option class="reservation-option" value="1">1 Person</option>
                                 <option class="reservation-option" value="2">2 Persons</option>
                                 <option class="reservation-option" value="3">3 Persons</option>
@@ -113,7 +113,7 @@
                             </select>
                         </li>
                         <li class="reservation-item">
-                            <select name="date" id="reservation-select">
+                            <select name="date" class="reservation-select" id="reservation-select">
                                 <option class="reservation-option" value="1">12/05/2025</option>
                                 <option class="reservation-option" value="2">12/06/2025</option>
                                 <option class="reservation-option" value="3">12/07/2025</option>
@@ -124,8 +124,8 @@
                             </select>
                         </li>
                         <li class="reservation-item">
-                            <select name="time" id="reservation-select">
-                                <option class="reservation-option" value="1">11:00 AM</option>
+                            <select name="time" class="reservation-select" <option class="reservation-option"
+                                value="1">11:00 AM</option>
                                 <option class="reservation-option" value="2">12:00 AM</option>
                                 <option class="reservation-option" value="3">1:00 PM</option>
                                 <option class="reservation-option" value="4">2:00 PM</option>
@@ -163,7 +163,6 @@
                             <li class="special-item">
                                 <div class="special-item-wrapper">
                                     <h4 class="special-caption">Chapel Hill Shiraz</h4>
-                                    <hr class="special-hr">
                                     <p class="special-price">$56</p>
                                 </div>
                                 <p class="special-text">AU | Bottle</p>
@@ -171,7 +170,6 @@
                             <li class="special-item">
                                 <div class="special-item-wrapper">
                                     <h4 class="special-caption">Catena Malbec</h4>
-                                    <hr class="special-hr">
                                     <p class="special-price">$59</p>
                                 </div>
                                 <p class="special-text">AR | Bottle</p>
@@ -180,7 +178,6 @@
                             <li class="special-item">
                                 <div class="special-item-wrapper">
                                     <h4 class="special-caption">La Vieille Rosé</h4>
-                                    <hr class="special-hr">
                                     <p class="special-price">$44</p>
                                 </div>
                                 <p class="special-text">FR | 750 ml</p>
@@ -189,7 +186,6 @@
                             <li class="special-item">
                                 <div class="special-item-wrapper">
                                     <h4 class="special-caption">Rhino Pale Ale</h4>
-                                    <hr class="special-hr">
                                     <p class="special-price">$31</p>
                                 </div>
                                 <p class="special-text">CA | 750 ml</p>
@@ -197,7 +193,6 @@
                             <li class="special-item">
                                 <div class="special-item-wrapper">
                                     <h4 class="special-caption">Irish Guinness</h4>
-                                    <hr class="special-hr">
                                     <p class="special-price">$26</p>
                                 </div>
                                 <p class="special-text">IE | 750 ml</p>
@@ -213,7 +208,6 @@
                             <li class="special-item">
                                 <div class="special-item-wrapper">
                                     <h4 class="special-caption">Aperol Spritz</h4>
-                                    <hr class="special-hr">
                                     <p class="special-price">$20</p>
                                 </div>
                                 <p class="special-text">Aperol | Villa Marchesi prosecco | soda | 30ml</p>
@@ -223,7 +217,6 @@
                                 <div class="special-item-wrapper">
                                     <h4 class="special-caption">Dark 'N' Stormy
                                     </h4>
-                                    <hr class="special-hr">
                                     <p class="special-price">$16</p>
                                 </div>
                                 <p class="special-text">Dark rum | Ginger beer | Slice of lime. </p>
@@ -233,7 +226,6 @@
                                 <div class="special-item-wrapper">
                                     <h4 class="special-caption">Daiquiri
                                     </h4>
-                                    <hr class="special-hr">
                                     <p class="special-price">$10</p>
                                 </div>
                                 <p class="special-text">Rum | Citrus juice | Sugar</p>
@@ -243,7 +235,6 @@
                                 <div class="special-item-wrapper">
                                     <h4 class="special-caption">Old Fashioned
                                     </h4>
-                                    <hr class="special-hr">
                                     <p class="special-price">$31</p>
                                 </div>
                                 <p class="special-text">Bourbon | Brown sugar | Angostura Bitters</p>
@@ -252,7 +243,6 @@
                             <li class="special-item">
                                 <div class="special-item-wrapper">
                                     <h4 class="special-caption">Negroni</h4>
-                                    <hr class="special-hr">
                                     <p class="special-price">$26</p>
                                 </div>
                                 <p class="special-text">Gin | Sweet Vermouth | Campari | Orange garnish</p>
@@ -336,11 +326,157 @@
 
         <section class="video">
             <div class="container video-container">
-                
-                
+
+
+            </div>
+        </section>
+
+        <section class="awards">
+            <div class="container awards-container">
+                <p class="awards-subtitle">Awards & recognition</p>
+                <h2 class="awards-title">Our Laurels</h2>
+                <div class="awards-wrapper">
+                    <ul class="awards-list">
+                        <li class="awards-item">
+                            <img src="./images/main/2-ewards.png" alt="2" class="awards-number">
+                            <div class="awards-item-wrapper">
+                                <h4 class="awards-name">Bib Gourmond</h4>
+                                <p class="awards-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </li>
+                        <li class="awards-item">
+                            <img src="./images/main/1-ewards.png" alt="1" class="awards-number">
+                            <div class="awards-item-wrapper">
+                                <h4 class="awards-name">Rising Star</h4>
+                                <p class="awards-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </li>
+                        <li class="awards-item">
+                            <img src="./images/main/5-ewards.png" alt=5"" class="awards-number">
+                            <div class="awards-item-wrapper">
+                                <h4 class="awards-name">AA Hospitality </h4>
+                                <p class="awards-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </li>
+                        <li class="awards-item">
+                            <img src="./images/main/3-ewards.png" alt="3" class="awards-number">
+                            <div class="awards-item-wrapper">
+                                <h4 class="awards-name">Outstanding Chef</h4>
+                                <p class="awards-text">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <img class="awards-img" src="./images/main/ewards-g.png" alt="fish">
+                </div>
+            </div>
+        </section>
+
+        <section class="blogs">
+            <div class="container blogs-container">
+                <p class="blogs-subtitle">Blogs</p>
+                <h2 class="blogs-title">Gerícht updates</h2>
+                <ul class="blogs-list">
+                    <li class="blogs-item">
+                        <img src="./images/main/blogs-stake.png" alt="steak" class="blogs-img">
+                        <div class="blogs-wrapper">
+                            <p class="blogs-inform">16 Apr 2021</p>
+                            <p class="blogs-inform">- Annalisa L</p>
+                        </div>
+                        <h3 class="blogs-label">tips for prepping and caring for your grill</h3>
+                        <p class="blogs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis
+                            ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <a href="" class="blogs-link">Read More</a>
+                    </li>
+                    <li class="blogs-item">
+                        <img src="./images/main/blogs-juice.png" alt="juice" class="blogs-img">
+                        <div class="blogs-wrapper">
+                            <p class="blogs-inform">23 May 2021</p>
+                            <p class="blogs-inform">-John Micheal</p>
+                        </div>
+                        <h3 class="blogs-label">summer cocktails and mocktails</h3>
+                        <p class="blogs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis
+                            ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <a href="" class="blogs-link">Read More</a>
+                    </li>
+                    <li class="blogs-item">
+                        <img src="./images/main/blogs-balls.png" alt="balls" class="blogs-img">
+                        <div class="blogs-wrapper">
+                            <p class="blogs-inform">06 Aug 2021</p>
+                            <p class="blogs-inform">-Fred W</p>
+                        </div>
+                        <h3 class="blogs-label">easy cooking for college students</h3>
+                        <p class="blogs-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis
+                            ipsum turpis elit elit scelerisque egestas mus in.</p>
+                        <a href="" class="blogs-link">Read More</a>
+                    </li>
+                </ul>
+                <button class="blogs-button">View More</button>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container gallery-container">
+                <div class="gallery-wrapper">
+                    <p class="gallery-subtitle">Instagram</p>
+                    <h2 class="gallery-title">Photo Gallery</h2>
+                    <p class="gallery-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis
+                        ipsum turpis elit elit scelerisque egestas mu.</p>
+                    <button class="gallery-button">View More</button>
+                </div>
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="./images/main/gallery-eggs.png" alt="eggs" class="gallery-img">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="./images/main/gallery-viski.png" alt="viski" class="gallery-img">
+                    </li>
+                    <li class="gallery-item">
+                        <img src="./images/main/galllery-toast.png" alt="toast" class="gallery-img">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-container">
+                    <p class="newsletter-subtitle">Newsletter</p>
+                    <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+                    <p class="newsletter-text">And never miss latest Updates!</p>
+                    <form action="" class="newsletter-form">
+                        <input type="" class="newsletter-input" placeholder="Email Address">
+                        <button class="newsletter-button">Subscribe</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-container container">
+           <div class="footer-wrapper">
+            <h2 class="footer-title"></h2>
+            <address class="footer-address">
+            <ul class="footer-list">
+                <li class="footer-item"><a href=""></a></li>
+                <li class="footer-item"><a href=""></a></li>
+                <li class="footer-item"><a href=""></a></li>
+            </ul>
+            </address>
+            
+           </div>
+           <div class="footer-wrapper">
+            <a class="footer-logo" href="">Gerícht</a>
+           </div>
+           <div class="footer-wrapper">
+            <h2 class="footer-title"></h2>
+            <ul class="footer-list">
+                <li class="footer-item"><p></p></li>
+                <li class="footer-item"><p></p></li>
+            </ul>
+           </div>
+        </div>
+    </footer>
 </body>
 
 </html>
