@@ -14,7 +14,7 @@ body {
     background-color: var(--bg-color);
     font-family: var(--main-text);
     font-size: 16px;
-    background-image: url(/images/main/wave-element.png);
+    background-image: url('../images/main/wave-element.png');
     color: var(--accent-text-color);
 }
 
@@ -95,7 +95,7 @@ button {
 
 .the_key-subtitle::after {
     content: '';
-    background-image: url(/images/main/spoon.png);
+    background-image: url('../images/main/spoon.png');
     display: block;
     width: 40px;
     height: 9px;
@@ -156,7 +156,7 @@ button {
 }
 
 .about {
-    background: url(/images/main/about_us-bg.png);
+    background: url('../images/main/about_us-bg.png');
     background-size: cover;
     padding-top: 120px;
     padding-bottom: 136px;
@@ -172,7 +172,7 @@ button {
 
 .about-title::after {
     content: '';
-    background-image: url(/images/main/spoon.png);
+    background-image: url('../images/main/spoon.png');
     display: block;
     width: 40px;
     height: 9px;
@@ -181,12 +181,12 @@ button {
 
 .about-title_left::after {
     content: '';
-    background-image: url(/images/main/spoon-left.png);
+    background-image: url('../images/main/spoon-left.png');
     display: block;
     width: 40px;
     height: 9px;
     padding-top: 8px;
-    margin: auto;
+    background-position: ;
 }
 
 .about-text {
@@ -208,7 +208,7 @@ button {
 
 .about-container {
     display: flex;
-    background-image: url(/images/main/g-about_us-bg.png);
+    background-image: url('../images/main/g-about_us-bg.png');
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
@@ -236,7 +236,7 @@ button {
 
 .reservation::before {
     content: '';
-    background-image: url(/images/main/double-spoon.png);
+    background-image: url('../images/main/double-spoon.png');
     background-repeat: no-repeat;
     width: 146px;
     height: 146px;
@@ -264,7 +264,7 @@ button {
 
 .reservation-subtitle::after {
     content: '';
-    background-image: url(/images/main/spoon.png);
+    background-image: url('../images/main/spoon.png');
     display: block;
     width: 40px;
     height: 9px;
@@ -304,7 +304,7 @@ button {
 }
 
 .menu {
-    background-image: url(/images/main/menu-bg.jpg), url(/images/main/double-spoon.png);
+    background-image: url('../images/main/menu-bg.jpg'), url('../images/main/double-spoon.png');
     background-repeat: no-repeat, repeat-x;
     background-position: center, top left;
     background-size: cover, 146px;
@@ -349,7 +349,7 @@ button {
 
 .special-subtitle::after {
     content: '';
-    background-image: url(/images/main/spoon.png);
+    background-image: url('../images/main/spoon.png');
     display: block;
     width: 40px;
     height: 9px;
@@ -448,7 +448,7 @@ button {
 
 
 .chef {
-    background-image: url('../images/');
+    background-image: url('../images/main/about_us-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 128px;
@@ -465,7 +465,7 @@ button {
 
 .chef-subtitle::after {
     content: '';
-    background-image: url(/images/main/spoon.png);
+    background-image: url('../images/main/spoon.png');
     display: block;
     width: 40px;
     height: 9px;
@@ -523,7 +523,7 @@ button {
 
 .chef-text::before {
     content: '';
-    background-image: url(/images/main/quote.png);
+    background-image: url('../images/main/quote.png');
     display: block;
     width: 47px;
     height: 40px;
@@ -550,7 +550,7 @@ button {
 
 .customers-subtitle::after {
     content: '';
-    background-image: url(/images/main/spoon.png);
+    background-image: url('../images/main/spoon.png');
     display: block;
     width: 40px;
     height: 9px;
@@ -612,7 +612,7 @@ button {
 }
 
 .video {
-    background-image: url(/images/main/video.png);
+    background-image: url('../images/main/video.png');
     background-size: cover;
     height: 763px;
 }
@@ -649,7 +649,7 @@ button {
 }
 
 .awards {
-    background-image: url(/images/main/about_us-bg.png);
+    background-image: url('../images/main/about_us-bg.png');
     padding-top: 128px;
     padding-bottom: 128px;
     background-repeat: no-repeat;
@@ -682,7 +682,7 @@ button {
 
 .awards-subtitle::after {
     content: '';
-    background-image: url(/images/main/spoon.png);
+    background-image: url('../images/main/spoon.png');
     display: block;
     width: 40px;
     height: 9px;
@@ -711,7 +711,7 @@ button {
 
 .blogs-subtitle::after {
     content: '';
-    background-image: url(/images/main/spoon.png);
+    background-image: url('../images/main/spoon.png');
     display: block;
     width: 40px;
     height: 9px;
@@ -787,7 +787,7 @@ button {
 .gallery {
     padding-top: 280px;
     padding-bottom: 241px;
-    background-image: url(/images/main/about_us-bg.png);
+    background-image: url('../images/main/about_us-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -802,7 +802,7 @@ button {
 
 .gallery-subtitle::after {
     content: '';
-    background-image: url(/images/main/spoon.png);
+    background-image: url('../images/main/spoon.png');
     display: block;
     width: 40px;
     height: 9px;
@@ -881,7 +881,7 @@ button {
 
 .newsletter-subtitle::after {
     content: '';
-    background-image: url(/images/main/spoon.png);
+    background-image: url('../images/main/spoon.png');
     display: block;
     width: 40px;
     height: 9px;
@@ -940,7 +940,7 @@ button {
 }
 
 .footer {
-    background-image: url(/images/main/about_us-bg.png);
+    background-image: url('../images/main/about_us-bg.png');
     background-repeat: no-repeat;
     padding-top: 128px;
     padding-bottom: 128px;
