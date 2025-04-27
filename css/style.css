@@ -448,7 +448,7 @@ button {
 
 
 .chef {
-    background-image: url(/images/main/about_us-bg.png);
+    background-image: url('../images/');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 128px;
@@ -990,18 +990,11 @@ button {
 
 .footer-text {
     line-height: 175%;
-    color: var(--accent-text-color;
+    color: var(--accent-text-color);
     font-family: var(--accent-text);
     width: 438px;
 }
 
-.footer-sm  {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-}
+.footer-text {
 
-.footer-list {
-    display: flex;
-    justify-content: center;
 }
