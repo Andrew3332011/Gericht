@@ -168,7 +168,25 @@ button {
     line-height: 130%;
     text-transform: capitalize;
     color: var(--main-color);
+}
 
+.about-title::after {
+    content: '';
+    background-image: url(/images/main/spoon.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    padding-top: 8px;
+}
+
+.about-title_left::after {
+    content: '';
+    background-image: url(/images/main/spoon-left.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    padding-top: 8px;
+    margin: auto;
 }
 
 .about-text {
@@ -244,6 +262,16 @@ button {
     color: var(--accent-text-color);
 }
 
+.reservation-subtitle::after {
+    content: '';
+    background-image: url(/images/main/spoon.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    margin-top: 8px;
+    margin: auto;
+}
+
 .reservation-title {
     font-weight: 600;
     font-size: 64px;
@@ -317,6 +345,16 @@ button {
     line-height: 130%;
     text-transform: capitalize;
     text-align: center;
+}
+
+.special-subtitle::after {
+    content: '';
+    background-image: url(/images/main/spoon.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    padding-top: 8px;
+    margin: auto;
 }
 
 .special-spoon {
@@ -425,6 +463,15 @@ button {
     padding-bottom: 8px;
 }
 
+.chef-subtitle::after {
+    content: '';
+    background-image: url(/images/main/spoon.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    margin-top: 8px;
+}
+
 .chef-title {
     font-weight: 600;
     font-size: 64px;
@@ -499,6 +546,16 @@ button {
     line-height: 130%;
     text-transform: capitalize;
     text-align: center;
+}
+
+.customers-subtitle::after {
+    content: '';
+    background-image: url(/images/main/spoon.png);
+    display: block;
+    width: 40px;
+    height: 9px;
+    padding-top: 8px;
+    margin: auto;
 }
 
 .customers-title {
@@ -596,7 +653,7 @@ button {
     padding-top: 128px;
     padding-bottom: 128px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .awards-title {
@@ -732,7 +789,7 @@ button {
     padding-bottom: 241px;
     background-image: url(/images/main/about_us-bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .gallery-subtitle {
@@ -880,4 +937,71 @@ button {
     display: block;
     width: 1364px;
     padding: 48px 32px;
+}
+
+.footer {
+    background-image: url(/images/main/about_us-bg.png);
+    background-repeat: no-repeat;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-size: cover;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-title {
+    font-size: 32px;
+    line-height: 130%;
+    text-transform: capitalize;
+    color: var(--accent-color);
+    padding-bottom: 24px;
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--text-color);
+    font-family: var(--accent-text);
+}
+
+.footer-days {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--text-color);
+    font-family: var(--accent-text);
+    width: 158px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.footer-logo {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130%;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-text {
+    line-height: 175%;
+    color: var(--accent-text-color;
+    font-family: var(--accent-text);
+    width: 438px;
+}
+
+.footer-sm  {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: center;
 }
