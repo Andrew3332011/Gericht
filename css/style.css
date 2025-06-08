@@ -318,7 +318,7 @@ button {
 .menu-link {
     font-weight: 600;
     font-size: 64px;
-    line-height: 1.3%;
+    line-height: 1.3;
     text-transform: capitalize;
     color: var(--accent-text-color);
 }
@@ -701,7 +701,7 @@ button {
 .blogs-subtitle {
     font-weight: 700;
     font-size: 23px;
-    line-height: 130%;
+    line-height: 1.3;
     text-transform: capitalize;
     text-align: center;
 }
@@ -719,7 +719,7 @@ button {
 .blogs-title {
     font-weight: 600;
     font-size: 64px;
-    line-height: 130%;
+    line-height: 1.3;
     text-transform: capitalize;
     color: var(--main-color);
     text-align: center;

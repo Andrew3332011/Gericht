@@ -1,10 +1,362 @@
 :root {
-    --main-color:#DCCA87;
-    --text-color:#AAAAAA;
-    --accent-color:#F5EFDB;
-    --accent-text:#fff;
-    --button-color:#0C0C0C;
-    --signature-text:'Bestermind', sans-serif;
-    --main-text: 'Cormorant Upright', sans-serif;
+    --main-color: #DCCA87;
+    --text-color: #AAAAAA;
+    --accent-color: #F5EFDB;
+    --accent-text-color: white;
+    --button-color: #0C0C0C;
+    --signature-text: 'Bestermind', sans-serif;
+    --main-text: "Cormorant Upright", serif;
     --accent-text: 'Open Sans', sans-serif;
+    --bg-color: #0C0C0C;
 }
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--main-text);
+    font-size: 16px;
+    background-image: url('../images/main/wave-element.png');
+    color: var(--accent-text-color);
+    letter-spacing: 0.04em;
+}
+
+.container {
+    width: 1680px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: var(--main-color);
+    color: var(--button-color);
+    border: none;
+    font-size: 16px;
+}
+
+.header {
+    padding-top: 32px;
+    background-image: url("../images/main/about_us-bg.png");
+    position: fixed;
+    background-size: cover;
+}
+
+.header-nav {
+    display: flex;
+    gap: 271px;
+    align-items: center;
+}
+
+.header-logo {
+    color: var(--accent-text-color);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.header-container {
+    display: flex;
+    gap: 437px;
+}
+
+.header-list {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.header-inform-list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.header-link {
+    line-height: 175%;
+    color: var(--accent-text-color);
+    font-family: var(--accent-text);
+}
+
+.header-inform-link {
+    font-weight: 600;
+    line-height: 175%;
+    text-transform: capitalize;
+    color: var(--accent-text-color);
+    font-family: var(--accent-text);
+}
+
+.on_the_rocks {
+    background-image: url("../images/main/about_us-bg.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.on_the_rocks-title {
+    font-weight: 700;
+    font-size: 181px;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    padding-top: 319px;
+    padding-bottom: 424px;
+    background-image: url("../images/bar-page/on-rock.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reservation-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reservation {
+    padding-bottom: 152px;
+    padding-top: 157px;
+}
+
+.reservation::before {
+    content: '';
+    background-image: url('../images/main/double-spoon.png');
+    background-repeat: no-repeat;
+    width: 146px;
+    height: 146px;
+    display: block;
+    background-position: 100% 0%;
+}
+
+.reservation-container {
+    border: 1px solid rgba(220, 202, 135, 0.2);
+    background-color: var(--bg-color);
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 1364px;
+    padding: 48px 32px;
+}
+
+.reservation-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    color: var(--accent-text-color);
+}
+
+.reservation-subtitle::after {
+    content: '';
+    background-image: url('../images/main/spoon.png');
+    display: block;
+    width: 40px;
+    height: 9px;
+    margin-top: 8px;
+    margin: auto;
+}
+
+.reservation-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    color: var(--main-color);
+    padding-bottom: 64px;
+}
+
+.reservation-select {
+    background-color: var(--bg-color);
+    border: 1px solid --main-color;
+    padding: 16px 16px;
+    line-height: 1.75;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-color);
+    width: 412px;
+    font-family: var(--main-text);
+    font-size: 16px;
+}
+
+.reservation-button {
+    padding: 8px 32px;
+    font-weight: 700;
+    line-height: 1.75;
+    color: var(--button-color);
+    font-family: var(--main-text);
+    margin-top: 64px;
+}
+
+.alcohol {
+    padding-top: 152px;
+    padding-bottom: 152px;
+}
+
+.alcohol-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.alcohol-subtitle::after {
+    content: '';
+    background-image: url('../images/main/spoon.png');
+    display: block;
+    width: 40px;
+    height: 9px;
+    margin: auto;
+}
+
+.alcohol-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    color: var(--main-color);
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 64px;
+}
+
+.alcohol-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+}
+
+.happy_hours {
+    background-image: url(../images/bar-page/happy-hours_bg.png);
+    padding-top: 330px;
+    padding-bottom: 330px;
+    background-size: cover;
+}
+
+.happy_hours-title {
+    font-weight: 600;
+    font-size: 128px;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.happy_hours-subtitle {
+    font-weight: 700;
+font-size: 32px;
+line-height: 1.3;
+letter-spacing: 0.04em;
+text-transform: capitalize;
+text-align: center;
+padding-top: 32px;
+}
+
+.special-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+    gap: 32px;
+    padding-bottom: 64px;
+    align-items: center;
+}
+
+.special-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.special-subtitle::after {
+    content: '';
+    background-image: url('../images/main/spoon.png');
+    display: block;
+    width: 40px;
+    height: 9px;
+    margin-top: 8px;
+    margin: auto;
+}
+
+.special {
+    padding-top: 152px;
+    padding-bottom: 152px;
+}
+
+.special-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--main-color);
+    padding-top: 8px;
+}
+
+.special-item {
+    padding-bottom: 40px;
+}
+
+.special-item.the_key-item:nth-child(5) {
+    padding-bottom: none;
+}
+
+.special-wrapper-title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.special-caption {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+
+.special-text {
+    line-height: 175%;
+    color: var(--text-color);
+    font-family: var(--accent-text);
+    padding-top: 8px;
+}
+
+.special-price::before {
+    content: '';
+    display: inline-block;
+    width: 119px;
+    height: 1px;
+    background-color: var(--accent-text-color);
+    margin-right: 32px;
+    margin-bottom: 5px;
+    margin-left: 32px;
+}
+
+
+.special-item-wrapper {
+    display: flex;
+    align-items: center;
+
+    padding-top: 48px;
+    justify-content: space-between;
+}
+
+.special-price {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.3;
+}
+
+.special-button {
+    padding: 8px 32px;
+    font-weight: 700;
+    line-height: 1.75;
+    font-family: var(--main-text);
+    color: var(--button-color);
+    display: block;
+    margin: auto;
+}
+
