@@ -243,8 +243,8 @@ button {
     background-repeat: no-repeat;
     width: 146px;
     height: 146px;
-    display: block;
-    background-position: 100% 0%;
+    position: relative;
+    background-position: left;
 }
 
 .reservation-container {
