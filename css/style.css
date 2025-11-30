@@ -107,6 +107,7 @@ button {
 
 .the_key-wrapper {
     width: 453px;
+    padding-top: 127px;
 }
 
 .the_key-button {
@@ -153,7 +154,7 @@ button {
 .the_key-list {
     display: flex;
     gap: 8px;
-    padding-top: 78px;
+    padding-top: 64px;
     padding-bottom: 161px;
     justify-content: center;
 }
@@ -163,6 +164,7 @@ button {
     background-size: cover;
     padding-top: 120px;
     padding-bottom: 136px;
+    position: relative;
 }
 
 .about-title {
@@ -179,7 +181,7 @@ button {
     display: block;
     width: 40px;
     height: 9px;
-    padding-top: 8px;
+    margin-top: 8px;
 }
 
 .about-title_left::after {
@@ -188,8 +190,8 @@ button {
     display: block;
     width: 40px;
     height: 9px;
-    padding-top: 8px;
     margin-left: auto;
+    margin-top: 8px;
 }
 
 .about-text {
@@ -235,17 +237,22 @@ button {
 .reservation {
     padding-bottom: 152px;
     padding-top: 157px;
+    position: relative;
 }
 
 .reservation::before {
     content: '';
-    background-image: url('../images/main/double-spoon.png');
-    background-repeat: no-repeat;
-    width: 146px;
+    background: url("../images/main/double-spoon.png");
+    display: block;
+    position: absolute;
     height: 146px;
-    position: relative;
-    background-position: left;
+    width: 146px;
+    top: -175px;
+    right: 0;
+    margin-right: 151px;
 }
+
+
 
 .reservation-container {
     border: 1px solid rgba(220, 202, 135, 0.2);
@@ -255,6 +262,7 @@ button {
     display: block;
     width: 1364px;
     padding: 48px 32px;
+    position: relative;
 }
 
 .reservation-subtitle {
@@ -271,8 +279,8 @@ button {
     display: block;
     width: 40px;
     height: 9px;
-    margin-top: 8px;
     margin: auto;
+    margin-top: 8px;
 }
 
 .reservation-title {
@@ -356,8 +364,8 @@ button {
     display: block;
     width: 40px;
     height: 9px;
-    margin-top: 8px;
     margin: auto;
+    margin-top: 8px;
 }
 
 .special {
@@ -551,8 +559,8 @@ button {
     display: block;
     width: 40px;
     height: 9px;
-    margin-top: 8px;
     margin: auto;
+    margin-top: 8px;
 }
 
 .customers-title {
@@ -576,6 +584,7 @@ button {
     line-height: 175%;
     color: var(--text-color);
     height: 84px;
+    padding-top: 18px;
 }
 
 .customers-name {
@@ -712,8 +721,8 @@ button {
     display: block;
     width: 40px;
     height: 9px;
-    margin-top: 8px;
     margin: auto;
+    margin-top: 8px;
 }
 
 .blogs-title {
@@ -861,8 +870,8 @@ button {
     display: block;
     width: 40px;
     height: 9px;
-    margin-top: 8px;
     margin: auto;
+    margin-top: 8px;
 }
 
 .newsletter-title {
@@ -985,6 +994,7 @@ button {
     width: 40px;
     height: 9px;
     margin: auto;
+    margin-top: 8px;
 }
 
 .footer-icons {

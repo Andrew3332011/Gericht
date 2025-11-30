@@ -5,7 +5,7 @@
     --accent-text-color: white;
     --button-color: #0C0C0C;
     --signature-text: 'Bestermind', sans-serif;
-    --main-text: "Cormorant Upright", serif;
+    --main-text: "Cormorant Upright", sans;
     --accent-text: 'Open Sans', sans-serif;
     --bg-color: #0C0C0C;
 }
@@ -29,6 +29,7 @@ button {
     color: var(--button-color);
     border: none;
     font-size: 16px;
+    font-family: var(--main-text);
 }
 
 .header {
@@ -147,8 +148,8 @@ button {
     display: block;
     width: 40px;
     height: 9px;
-    margin-top: 8px;
     margin: auto;
+    margin-top: 8px;
 }
 
 .reservation-title {
@@ -203,6 +204,7 @@ button {
     width: 40px;
     height: 9px;
     margin: auto;
+    margin-top: 8px;
 }
 
 .alcohol-title {
@@ -241,12 +243,12 @@ button {
 
 .happy_hours-subtitle {
     font-weight: 700;
-font-size: 32px;
-line-height: 1.3;
-letter-spacing: 0.04em;
-text-transform: capitalize;
-text-align: center;
-padding-top: 32px;
+    font-size: 32px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 32px;
 }
 
 .special-wrapper {
@@ -272,8 +274,8 @@ padding-top: 32px;
     display: block;
     width: 40px;
     height: 9px;
-    margin-top: 8px;
     margin: auto;
+    margin-top: 8px;
 }
 
 .special {
@@ -359,12 +361,17 @@ padding-top: 32px;
     margin: auto;
 }
 
+.contact {
+    padding-top: 128px;
+    background-image: url("../images/main/about_us-bg.png");
+    background-size: contain;
+}
+
 .contact-subtitle {
     font-weight: 700;
     font-size: 23px;
     line-height: 1.3;
     text-transform: capitalize;
-    text-align: center;
 }
 
 .contact-subtitle::after {
@@ -374,7 +381,6 @@ padding-top: 32px;
     width: 40px;
     height: 9px;
     margin-top: 8px;
-    margin: auto;
 }
 
 .contact-title {
@@ -382,7 +388,218 @@ padding-top: 32px;
     font-size: 64px;
     line-height: 1.3;
     text-transform: capitalize;
-    text-align: center;
     color: var(--main-color);
     padding-top: 8px;
+}
+
+.contact-text {
+    line-height: 1.75;
+    color: var(--text-color);
+    font-family: var(--accent-text);
+    padding-top: 64px;
+}
+
+.contact-hours {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    color: var(--main-color);
+    padding-top: 32px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+    padding-bottom: 64px;
+}
+
+.contact-item {
+    font-family: var(--accent-text);
+    line-height: 1.75;
+}
+
+.contact-button {
+    padding: 8px 32px;
+    font-weight: 700;
+    line-height: 1.75;
+}
+
+.contact-container {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+
+.contact-wrapper {
+    padding-top: 124px;
+}
+
+
+.newsletter {
+    padding-top: 113px;
+    padding-bottom: 128px;
+}
+
+.newsletter-subtitle {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.3;
+    text-transform: capitalize;
+}
+
+.newsletter-subtitle::after {
+    content: '';
+    background-image: url('../images/main/spoon.png');
+    display: block;
+    width: 40px;
+    height: 9px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.newsletter-title {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 1.3;
+    color: var(--main-color);
+    text-transform: capitalize;
+    padding-top: 8px;
+}
+
+.newsletter-text {
+    line-height: 175%;
+    font-family: var(--accent-text);
+    padding-top: 24px;
+}
+
+.newsletter-input {
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.75;
+    text-transform: capitalize;
+    font-family: var(--main-text);
+    background-color: var(--button-color);
+    padding: 16px 19px;
+    width: 635px;
+    border: 1px solid var(--accent-color);
+}
+
+.newsletter-button {
+    padding: 8px 32px;
+    font-weight: 700;
+    line-height: 1.75;
+    font-size: 16px;
+    font-family: var(--main-text);
+    margin-left: 32px;
+}
+
+.newsletter-form {
+    padding-top: 64px;
+}
+
+.newsletter-container {
+    border: 1px solid rgba(220, 202, 135, 0.2);
+    background-color: var(--bg-color);
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 1300px;
+    padding: 48px 32px;
+}
+
+.footer {
+    background-image: url('../images/main/about_us-bg.png');
+    background-repeat: no-repeat;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background-size: cover;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-title {
+    font-size: 32px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    color: var(--accent-color);
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--text-color);
+    font-family: var(--accent-text);
+}
+
+.footer-days {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--text-color);
+    font-family: var(--accent-text);
+    width: 158px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.footer-address {
+    text-align: center;
+}
+
+.footer-logo {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.3;
+    color: var(--main-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.footer-text {
+    line-height: 1.75;
+    color: var(--accent-text-color);
+    font-family: var(--accent-text);
+    width: 438px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.footer-text::after {
+    content: '';
+    background-image: url('../images/main/spoon.png');
+    display: block;
+    width: 40px;
+    height: 9px;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-direction: row;
+    padding-top: 16px;
+}
+
+
+.footer-copyright {
+    color: var(--text-color);
+    line-height: 1.75;
+    font-family: var(--accent-text);
+    text-align: center;
+    padding-top: 80px;
+}
+
+.footer-wrapper {
+    text-align: center;
 }
