@@ -453,8 +453,6 @@ button {
 .special-item-wrapper {
     display: flex;
     align-items: center;
-
-    padding-top: 48px;
     justify-content: space-between;
 }
 
@@ -672,25 +670,31 @@ button {
 
 }
 
-.awards-wrapper {
+.awards-container {
     display: flex;
-    gap: 111px;
-    justify-content: center;
+    align-items: center;
+    
 }
 
+
+.awards-wrapper {
+    
+}
 
 
 
 .awards-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    row-gap: 64px;
+    column-gap: 32px;
     align-items: center;
 }
 
 .awards-item {
     display: flex;
     gap: 32px;
+   flex-basis: calc((100% - 32px) / 2) ;
 
 }
 
@@ -721,6 +725,7 @@ button {
     text-transform: capitalize;
     color: var(--main-color);
     padding-top: 8px;
+    padding-bottom: 64px;
 }
 
 
@@ -831,10 +836,12 @@ button {
     padding: 8px 32px;
     font-weight: 700;
     color: var(--button-color);
-    line-height: 175%;
+    line-height: 1.75;
     font-family: var(--main-text);
     margin: auto;
     display: block;
+    font-size: 16px;
+    letter-spacing: 0.04em;
 }
 
 .blogs-link {
@@ -907,20 +914,21 @@ button {
 
 .gallery-item {
     position: relative;
-    
+
 }
 
 .gallery-overlay {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 100%;
     width: 100%;
+    top: 0;
+    left: 0;
     opacity: 0;
     transition: .5s ease;
-    background-color: black;
+     background-image: linear-gradient(#000000BF, #000000A3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-item:hover .gallery-overlay {
@@ -931,10 +939,7 @@ button {
 
 
 .gallery-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
     width: 52px;
     height: 52px;
 }
