@@ -83,6 +83,11 @@ button {
 }
 
 
+.the_key-hashtag {
+    font-size: 18px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+}
 
 .the_key-slide {
     display: flex;
@@ -92,6 +97,7 @@ button {
 
 .the_key-container {
     width: 1680px;
+    position: relative;
 }
 
 .the_key-subtitle {
@@ -114,6 +120,16 @@ button {
 .the_key-wrapper {
     width: 453px;
     padding-top: 127px;
+}
+
+.the_key_hashtag-wrapper {
+   writing-mode: sideways-lr;
+    display: flex;
+    gap: 40px;
+    top: 336px;
+    bottom: 526px;
+    position: absolute;
+    left: 0;
 }
 
 .the_key-button {
@@ -756,6 +772,7 @@ button {
 .blogs {
     padding-top: 152px;
     padding-bottom: 152px;
+    position: relative;
 }
 
 .blogs-list {
@@ -856,7 +873,19 @@ button {
     background-image: url('../images/main/about_us-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
+
+ .gallery::before {
+     content: '';
+    background: url("../images/main/double-spoon.png");
+    display: block;
+    position: absolute;
+    height: 146px;
+    width: 146px;
+    top: -251px;
+    right: 92px;
+ }
 
 .gallery-subtitle {
     font-weight: 700;
@@ -947,6 +976,18 @@ button {
 .newsletter {
     padding-top: 113px;
     padding-bottom: 128px;
+    position: relative;
+}
+
+.newsletter::before {
+    content: '';
+    background: url("../images/main/double-spoon.png");
+    display: block;
+    position: absolute;
+    height: 146px;
+    width: 146px;
+    left: 106px;
+    top: -56px;
 }
 
 .newsletter-subtitle {
